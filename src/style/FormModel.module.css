@@ -1,0 +1,108 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F9F9;
+  font-family: "Roboto", sans-serif;
+  margin-left: 250px;
+  min-height: 100vh;
+
+  padding: 5vmin 20px ;
+}
+
+.title {
+  font-size: 4.5vmin;
+  color: #09292a;
+  margin-bottom: 5vmin;
+  font-weight: 900;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Alinha os itens no centro (horizontal) */
+  justify-content: flex-start; /* Alinha o conteúdo no topo */
+  width: 60%;
+}
+
+.inputGroup {
+  width: 100%;
+
+  margin-bottom: 20px;
+  position: relative; /* Necessário para o posicionamento do asterisco */
+  
+  margin-bottom: 3vmin;
+}
+
+.inputLabel {
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: #09292a;
+}
+
+/* Estilo para o asterisco vermelho */
+.inputLabel::after {
+  content: " *"; /* Adiciona o asterisco */
+  color: red; /* Torna o asterisco vermelho */
+  font-weight: bold;
+}
+
+/* Estilo padrão dos inputs */
+.input {
+  width: 100%;
+
+  padding: 15px 10px;
+  margin-top: 5px;
+  border: 2px #ccc;
+  border-radius: 0px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 4px 3px 10px #ccc;
+}
+
+/* Estilo de erro - borda vermelha e box-shadow vermelho */
+.inputError {
+  border-color: red;
+  background-color: #fde2e2; /* Cor de fundo suave vermelha */
+  box-shadow: 0 0 8px red; /* Box-shadow vermelho */
+}
+
+/* Grupo de rádios */
+.radioGroup {
+  width: 100%;
+
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilo do botão de envio */
+.submitButton {
+  background-color: #0c6b2d;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  box-shadow: 4px 3px 10px #ccc;
+  display: block; /* Garante que o botão seja tratado como bloco */
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+.submitButton:hover {
+  background-color: #004f1f;
+}
+
+.submitButton:active {
+  background-color: #0c6b2d;
+}
+
+.errorText {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
