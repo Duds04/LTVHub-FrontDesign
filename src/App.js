@@ -5,6 +5,7 @@ import styles from "./style/App.css"; // Estilo geral da aplicação como módul
 import Home from "./pages/Home";
 import FormModel from "./pages/FormModel";
 import Estatisticas from "./pages/Estatisticas"
+import Clientes from "./pages/Clientes"
 
 import { FileProvider } from "./context/FileContext"; // Importando o FileProvider
 
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/modelo" element={<FormModel />} />
             <Route path="/estatisticas" element={<Estatisticas />} />
+            <Route path="/clientes" element={<Clientes />} />
           </Routes>
         </FileProvider>
       </div>

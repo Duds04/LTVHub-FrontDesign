@@ -1,69 +1,69 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaCog, FaUsers, FaChartBar, FaGithub, FaLinkedin, FaEnvelope, FaGlobe } from 'react-icons/fa';
-import styles from '../style/Sidebar.module.css';  
+import stylesSidebar from '../style/Sidebar.module.css';  
 
 const Sidebar = () => {
   return (
-    <div className={styles.sidebar}>
+    <div className={stylesSidebar.sidebar}>
       {/* Logo no topo */}
-      <div className={styles.logoContainer}>
-        <img src="/assets/logo.svg"  alt="Logo" className={styles.logo} />
+      <div className={stylesSidebar.logoContainer}>
+        <img src="/assets/logo.svg"  alt="Logo" className={stylesSidebar.logo} />
       </div>
 
       {/* Menu de navegação */}
-      <nav className={styles.navMenu}>
+      <nav className={stylesSidebar.navMenu}>
         <ul>
           <li>
-            <Link to="/" className={styles.navItem}>
-              <FaHome className={styles.icon} /> Tela Inicial
+            <Link to="/" className={stylesSidebar.navItem}>
+              <FaHome className={stylesSidebar.icon} /> Tela Inicial
             </Link>
           </li>
           <li>
-            <Link to="/modelo" className={styles.navItem}>
-              <FaCog className={styles.icon} /> Modelo
+            <Link to="/modelo" className={stylesSidebar.navItem}>
+              <FaCog className={stylesSidebar.icon} /> Modelo
             </Link>
           </li>
           <li>
-            <Link to="/clientes" className={styles.navItem}>
-              <FaUsers className={styles.icon} /> Clientes
+            <Link to="/clientes" className={stylesSidebar.navItem}>
+              <FaUsers className={stylesSidebar.icon} /> Clientes
             </Link>
           </li>
           <li>
-            <Link to="/estatisticas" className={styles.navItem}>
-              <FaChartBar className={styles.icon} /> Estatísticas
+            <Link to="/estatisticas" className={stylesSidebar.navItem}>
+              <FaChartBar className={stylesSidebar.icon} /> Estatísticas
             </Link>
           </li>
         </ul>
       </nav>
 
       {/* Rodapé com Redes Sociais */}
-      <div className={styles.footer}>
-        <div className={styles.socialLinks}>
-          <ul className={styles.socialList}>
+      <div className={stylesSidebar.footer}>
+        <div className={stylesSidebar.socialLinks}>
+          <ul className={stylesSidebar.socialList}>
             <li>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <FaGithub className={styles.icon} />
+                <FaGithub className={stylesSidebar.icon} />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className={styles.icon} />
+                <FaLinkedin className={stylesSidebar.icon} />
               </a>
             </li>
             <li>
               <a href="mailto:email@example.com">
-                <FaEnvelope className={styles.icon} />
+                <FaEnvelope className={stylesSidebar.icon} />
               </a>
             </li>
             <li>
               <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-                <FaGlobe className={styles.icon} />
+                <FaGlobe className={stylesSidebar.icon} />
               </a>
             </li>
           </ul>
         </div>
-        <div className={styles.copyright}>
+        <div className={stylesSidebar.copyright}>
           © NesPeD Lab
         </div>
       </div>
