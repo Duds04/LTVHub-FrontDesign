@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import stylesCliente from "../style/Clientes.module.css";
+import isConfigurateModel from "../components/isConfigurateModel"; // Importando o HOC
+
 
 const Clientes = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filter, setFilter] = useState("");
+  const [searchTerm, setSearchTerm] = useState(""); // Termo de pesquisa
+  const [filter, setFilter] = useState(""); // Filtro de tipo de cliente
   const [clientes, setClientes] = useState([
     {
       id: 1,
@@ -77,59 +79,59 @@ const Clientes = () => {
       valorPorTransacao: 208.33,
     },
   ]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const [currentPage, setCurrentPage] = useState(1); // Página atual
+  const itemsPerPage = 6; // Itens por página
 
   const navigate = useNavigate();
 
   const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
+    setSearchTerm(event.target.value); // Atualiza o estado de pesquisa
   };
 
   const handleFilterChange = (event) => {
-    setFilter(event.target.value);
+    setFilter(event.target.value); // Atualiza o filtro de tipo de cliente
   };
 
   const handleDetailsClick = (id) => {
-    navigate(`/cliente/${id}`);
+    navigate(`/cliente/${id}`); // Navega para a página de detalhes
   };
 
   const filteredClients = clientes.filter((client) => {
-    const matchesSearch = client.tipo
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase());
-    const matchesFilter = filter ? client.tipo === filter : true;
-    return matchesSearch && matchesFilter;
+    // Converte todos os dados do cliente para string para a comparação
+    const searchString = `${client.id} ${client.tipo} ${client.numCompras} ${client.LTV} ${client.valorPorTransacao}`.toLowerCase();
+    
+    const matchesSearch = searchString.includes(searchTerm.toLowerCase()); // Verifica se o termo de pesquisa está em qualquer campo
+
+    const matchesFilter = filter ? client.tipo === filter : true; // Verifica o filtro de tipo de cliente, se houver
+
+    return matchesSearch && matchesFilter; // Retorna os clientes que correspondem à pesquisa e ao filtro
   });
 
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentClients = filteredClients.slice(
-    startIndex,
-    startIndex + itemsPerPage
-  );
+  const currentClients = filteredClients.slice(startIndex, startIndex + itemsPerPage); // Pega os clientes da página atual
 
   const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+    setCurrentPage(pageNumber); // Muda a página
   };
 
-  const totalPages = Math.ceil(filteredClients.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredClients.length / itemsPerPage); // Total de páginas
 
   return (
     <div className={stylesCliente.container}>
-      <h1 className={stylesCliente.title}>Clientes</h1>
+      <h1 className={stylesCliente.title}>CLIENTES</h1>
       <div className={stylesCliente.searchFilterContainer}>
         <input
           type="text"
           className={stylesCliente.searchInput}
           placeholder="Buscar Cliente"
-          value={searchTerm}
-          onChange={handleSearchChange}
+          value={searchTerm} // Valor do input
+          onChange={handleSearchChange} // Atualiza o termo de pesquisa
         />
         <div className={stylesCliente.filterContainer}>
           <select
             className={stylesCliente.filterSelect}
             value={filter}
-            onChange={handleFilterChange}
+            onChange={handleFilterChange} // Atualiza o filtro
           >
             <option value="">Filtros</option>
             <option value="Cliente A">Cliente A</option>
@@ -203,4 +205,4 @@ const Clientes = () => {
   );
 };
 
-export default Clientes;
+export default isConfigurateModel(Clientes);

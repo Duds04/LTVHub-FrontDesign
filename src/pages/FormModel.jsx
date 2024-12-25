@@ -36,7 +36,7 @@ const FormModel = () => {
 
       localStorage.setItem("configurateModel", "true");
 
-      navigate("/estatisticas"); 
+      navigate("/clientes"); 
     }
   };
 

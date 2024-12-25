@@ -42,22 +42,22 @@ const Sidebar = () => {
         <div className={stylesSidebar.socialLinks}>
           <ul className={stylesSidebar.socialList}>
             <li>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Duds04/ltvhub-front" target="_blank" rel="noopener noreferrer">
                 <FaGithub className={stylesSidebar.icon} />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/search/results/all/?keywords=nesped&origin=GLOBAL_SEARCH_HEADER&sid=v.N" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className={stylesSidebar.icon} />
               </a>
             </li>
             <li>
-              <a href="mailto:email@example.com">
+              <a href="mailto:nesped.ufv@gmail.com">
                 <FaEnvelope className={stylesSidebar.icon} />
               </a>
             </li>
             <li>
-              <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://nesped.caf.ufv.br/" target="_blank" rel="noopener noreferrer">
                 <FaGlobe className={stylesSidebar.icon} />
               </a>
             </li>

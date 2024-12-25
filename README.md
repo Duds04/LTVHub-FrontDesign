@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# LTV-HUB
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://via.placeholder.com/800x200?text=LTV-HUB" alt="LTV-HUB Banner" />
 
-## Available Scripts
+### 💡 Ferramenta de Cálculo de LTV (CLV)
 
-In the project directory, you can run:
+O **LTV-HUB** foi desenvolvido para simplificar os cálculos do Lifetime Value (LTV) utilizando diversas abordagens avançadas e modelos configuráveis. Essa ferramenta é intuitiva e poderosa, permitindo que os usuários obtenham insights financeiros precisos de maneira prática.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Configuração de Modelos**:
+  - Seleção da coluna de ID do usuário.
+  - Seleção da coluna de datas das transações.
+  - Seleção da coluna de valores das transações.
+  
+- **Modelos de Predição de Frequência**:
+  - BG/NBD
+  - Pareto
+  - Machine Learning
 
-### `npm test`
+- **Modelos de Predição Monetária**:
+  - Gamma-Gamma
+  - Machine Learning
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Previsão de LTV**:
+  - Escolha do horizonte temporal em meses.
 
-### `npm run build`
+<img src="https://via.placeholder.com/600x300?text=Exemplo+de+Dashboard" alt="Exemplo de Dashboard" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📋 Sobre o Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Desenvolvido por:** Maria Eduarda, estudante de Ciência da Computação na Universidade Federal de Viçosa (UFV).
 
-### `npm run eject`
+- [GitHub](https://github.com/Duds04)
+- [LinkedIn](https://www.linkedin.com/in/maria-eduarda-de-pinho-braga-558057219/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Laboratório:** NESPeD-LAB (Laboratório de Inteligência em Sistemas Pervasivos e Distribuídos).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔧 Tecnologias Utilizadas
 
-## Learn More
+- **React.js** (Principal)
+- JSX
+- HTML
+- CSS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🖥️ Como Executar o Projeto
 
-### Code Splitting
+### Pré-requisitos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Certifique-se de ter instalado:
+- **Node.js** (versão 18 ou superior).
+- **NPM** ou **Yarn**.
 
-### Analyzing the Bundle Size
+### Passo a Passo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/Duds04/ltvhub.git
+   ```
 
-### Making a Progressive Web App
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd ltvhub
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-### Advanced Configuration
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. Acesse a aplicação no navegador em `http://localhost:3000`.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📜 Licença
 
-### `npm run build` fails to minify
+© NESPeD-LAB. Todos os direitos reservados.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🛡️ Contribuições
+
+Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull request para melhorias.
+
+### Como Contribuir
+
+1. Faça um fork do repositório.
+2. Crie uma branch para a sua feature:
+   ```bash
+   git checkout -b feature/nome-da-feature
+   ```
+3. Commit suas mudanças:
+   ```bash
+   git commit -m 'Adiciona nova feature'
+   ```
+4. Envie as alterações:
+   ```bash
+   git push origin feature/nome-da-feature
+   ```
+5. Abra um Pull Request.
+
+---
+
+<div align="center">
+  <strong>🌟 Obrigado por usar o LTV-HUB! 🌟</strong>
+</div>
+

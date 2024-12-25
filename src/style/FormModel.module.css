@@ -91,6 +91,8 @@
   box-shadow: 4px 3px 10px #ccc;
   display: block; /* Garante que o botão seja tratado como bloco */
   margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+  border-radius: 5px;
 }
 
 .submitButton:hover {
