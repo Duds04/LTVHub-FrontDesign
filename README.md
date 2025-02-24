@@ -64,7 +64,7 @@ Certifique-se de ter instalado:
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/Duds04/ltvhub.git
+   git clone https://github.com/Duds04/LTVHub-FrontDesign.git
    ```
 
 2. Navegue até o diretório do projeto:
