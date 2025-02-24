@@ -69,7 +69,7 @@ Certifique-se de ter instalado:
 
 2. Navegue até o diretório do projeto:
    ```bash
-   cd ltvhub
+   cd LTVHub-FrontDesign
    ```
 
 3. Instale as dependências:
