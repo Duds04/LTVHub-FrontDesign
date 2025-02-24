@@ -15,7 +15,6 @@ const Home = () => {
       setFileName(file.name); // Atualiza o nome do arquivo
       setIsUploaded(false);   // Resetando o estado para "não enviado"
       localStorage.removeItem('fileUploaded');
-
     } else {
       setFileName(""); // Se nenhum arquivo for selecionado, o nome é limpo
     }
@@ -46,29 +45,47 @@ const Home = () => {
       <div className={stylesHome.section}>
         <h1 className={stylesHome.title}>LTV HUB</h1>
         <p className={stylesHome.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis id
-          elit sit amet consectetur. Sed facilisis turpis vitae ex rhoncus, ut
-          vestibulum libero aliquet. In hac habitasse platea dictumst. Aliquam
-          pharetra eros id maximus accumsan. Sed quis neque lorem. Aenean
-          tristique consequat quam ut vehicula. Maecenas tincidunt purus ac
-          justo semper, et maximus neque malesuada. Morbi a metus sed purus
-          posuere luctus nec porttitor dolor. Proin turpis neque, convallis at
-          lacus quis, dignissim varius nisi. Vestibulum ex felis, ornare semper
-          facilisis a, sollicitudin vitae metus.
+          Bem-vindo ao LTV HUB, sua solução completa para calcular o Lifetime Value (LTV) de forma prática e eficiente. 
+          Configure modelos preditivos e descubra insights financeiros detalhados para impulsionar suas estratégias de negócio.
+        </p>
+        <p className={stylesHome.description}>
+          O cálculo do Lifetime Value pode ser realizado utilizando diferentes modelos estatísticos e preditivos. 
+          Aqui estão os modelos disponíveis:
+        </p>
+        <h2 className={stylesHome.subTitle}>Modelos de Predição de Frequência:</h2>
+        <p className={stylesHome.description}>
+          <ul>
+            <li><strong>BG/NBD:</strong> Modelo baseado no comportamento de compra dos clientes.</li>
+            <li><strong>Pareto:</strong> Modelo para estimar a probabilidade de recompra.</li>
+            <li><strong>Machine Learning:</strong> Abordagem personalizada usando algoritmos de aprendizado de máquina.</li>
+          </ul>
+        </p>
+        <h2 className={stylesHome.subTitle}>Modelos de Predição Monetária:</h2>
+        <p className={stylesHome.description}>
+          <ul>
+            <li><strong>Gamma-Gamma:</strong> Modelo estatístico para prever o valor médio das transações.</li>
+            <li><strong>Machine Learning:</strong> Abordagem avançada para prever valores monetários.</li>
+          </ul>
+        </p>
+        <p className={stylesHome.description}>
+          Escolha o modelo que melhor atende às suas necessidades para configurar e gerar previsões detalhadas.
         </p>
       </div>
       <div className={stylesHome.section}>
         <h1 className={stylesHome.title}>UPLOAD</h1>
         <p className={stylesHome.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis id
-          elit sit amet consectetur. Sed facilisis turpis vitae ex rhoncus, ut
-          vestibulum libero aliquet. In hac habitasse platea dictumst. Aliquam
-          pharetra eros id maximus accumsan. Sed quis neque lorem. Aenean
-          tristique consequat quam ut vehicula. Maecenas tincidunt purus ac
-          justo semper, et maximus neque malesuada. Morbi a metus sed purus
-          posuere luctus nec porttitor dolor. Proin turpis neque, convallis at
-          lacus quis, dignissim varius nisi. Vestibulum ex felis, ornare semper
-          facilisis a, sollicitudin vitae metus.
+          Faça o upload do seu arquivo <strong>CSV</strong> contendo as informações de usuários e transações. 
+          Este arquivo deve incluir, obrigatoriamente, as seguintes colunas:
+        </p>
+        <p className={stylesHome.description}>
+          <ul>
+            <li><strong>Coluna de ID Usuário:</strong> Identificação única dos usuários.</li>
+            <li><strong>Coluna de Data das Transações:</strong> Datas em que as transações foram realizadas.</li>
+            <li><strong>Coluna de Valor das Transações:</strong> Valores das transações realizadas pelos usuários.</li>
+          </ul>
+        </p>
+        <p className={stylesHome.description}>
+          Escolha um arquivo e clique em "Enviar Arquivo" para continuar.
         </p>
         
         {/* Container para o input e botão */}

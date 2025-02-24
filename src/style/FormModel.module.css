@@ -6,14 +6,15 @@
   font-family: "Roboto", sans-serif;
   margin-left: 250px;
   min-height: 100vh;
-
-  padding: 5vmin 20px ;
+  /* Top, Rigth, Bottom, Left */
+  padding: 0px 20px;
 }
 
 .title {
   font-size: 4.5vmin;
   color: #09292a;
-  margin-bottom: 5vmin;
+  margin-bottom: 3vmin;
+  margin-top: 3vmin;
   font-weight: 900;
 }
 
@@ -22,7 +23,17 @@
   flex-direction: column; /* Alinha os itens na vertical */
   align-items: center; /* Alinha os itens no centro (horizontal) */
   justify-content: flex-start; /* Alinha o conteúdo no topo */
-  width: 60%;
+  width: 80%;
+  min-height: 50%;
+  
+
+  margin-bottom: 40px;
+  max-width: 70vw; /* Aumenta a largura da seção */
+  font-weight: 600;
+  padding: 30px 40px;
+  background-color: #ffffff; /* Fundo branco para contraste */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  border-radius: 10px; /* Bordas arredondadas */
 }
 
 .inputGroup {
@@ -31,13 +42,13 @@
   margin-bottom: 20px;
   position: relative; /* Necessário para o posicionamento do asterisco */
   
-  margin-bottom: 3vmin;
+  margin-bottom: 3.8vmin;
 }
 
 .inputLabel {
   width: 100%;
 
-  font-size: 1rem;
+  font-size: 2vmin;
   font-weight: 600;
   color: #09292a;
 }
@@ -54,10 +65,10 @@
   width: 100%;
 
   padding: 15px 10px;
-  margin-top: 5px;
+  margin-top: 10px;
   border: 2px #ccc;
   border-radius: 0px;
-  font-size: 1rem;
+  font-size: 2vmin;
   box-sizing: border-box;
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
   box-shadow: 4px 3px 10px #ccc;
@@ -76,14 +87,17 @@
 
   display: flex;
   gap: 20px;
+  font-size: 2vmin;
+  font-weight: 100;
 }
 
 /* Estilo do botão de envio */
 .submitButton {
   background-color: #0c6b2d;
   color: white;
-  font-size: 16px;
-  padding: 10px 20px;
+  font-size: 2vmin;
+  font-weight: 900;
+  padding: 15px 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -105,6 +119,6 @@
 
 .errorText {
   color: red;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
 }
